@@ -1,71 +1,118 @@
-// List of JavaScript tips
-var tipsList = [
-	"Don't forget the <span class='code'>var</span> keyword when assigning a variable's value for the first time.",
-
-	"<span class='code'>undefined</span>, <span class='code'>null</span>, <span class='code'>0</span>, <span class='code'>false</span>, <span class='code'>NaN</span>, and <span class='code'>''</span> (empty string) are all falsy.",
-
-	"Declare a function with<br/> <span class='code-block'>function <em>myFunctionName</em>() { <br>&nbsp;&nbsp;...<br> }</span>",
-
-	"<span class='code'>if</span>/<span class='code'>else</span> statements look like <br/> <span class='code-block'>if (<em>condition</em>) { <br/>&nbsp;&nbsp;...<br/>} else { <br/>&nbsp;&nbsp;...<br/>}",
-
-	"You can return the result of a function into a variable with <span class='code'>return</span>:<br><span class='code-block'>function timesFive(inputNumber) {<br> &nbsp;&nbsp;return inputNumber * 5; <br>}<br>console.log(timesFive(6));<br>// Output: 30</span> ",
-
-	"The <span class='code'>&&</span> operator means both things must be true: <br/> <span class='code-block'> true && true = true<br>true && false = false<br>false && false = false</span>",
-
-	"The <span class='code'>||</span> operator means either can be true: <br/> <span class='code-block'> true || true = true<br>true || false = true<br>false || false = false</span>",
-
-	"A <span class='code'>for</span> has three condtions: a start condition, a stop condition, and an iterator: <br> <span class='code-block'>for (var i = 0; i < myArray.length; i++) { <br>&nbsp;&nbsp;...<br>}</span>",
-
-	"To interpolate a variable into a string, use the <span class='code'>+</span> operator, like this: <br> <span class='code-block'>var myName = 'Jon';<br/> 'Hello, my name is ' + myName;</span>",
-
-	"To generate a random number, use JavaScript's built in function <span class='code'>Math.random()</span>.",
-
-	"Arrays hold lists of data. You can access any of the list items by using bracket notation, like this: <br> <span class='code-block'>var myArray = ['pears', 'asparagus', 'bananas'];<br>myArray[1]; // asparagus</span>"
-];
-
-// Tip Limit counter
-var tipLimit = 3;
-
-// Generate a number
-function generateNumber() {
-	return Math.floor((Math.random()*tipsList.length))
+function hideFrstStage() {
+	var ButtonsPrimary = document.getElementsByClassName('frstStage');
+	for (var i = 0; i < ButtonsPrimary.length; i++) {
+		ButtonsPrimary[i].style.display = "none";
+	}
 }
 
-// Generate a tip:
-// 1. Get random number from generateNumber()
-// 2. Use the random number to get the tip from the array
-// 3. Show the tip
-function generateTip() {
-	var tip = tipsList[generateNumber()]
-	document.querySelector(".js-tip").innerHTML = tip;
-	var tipLimitCount = document.querySelector(".tip-limit-count");
-	tipLimitCount.innerHTML = tipLimit;
-
+function t_w_stage() { // Russian --> German
+	var t_w = document.getElementsByClassName('t_w_stage');
+	for (var i = 0; i < t_w.length; i++) {
+		t_w[i].style.display = "flex";
+	}
+	document.getElementById('undefLang').id = 'germanAnswer';
+}	  
+function w_t_stage() { // German --> Russian
+	var w_t = document.getElementsByClassName('w_t_stage');
+	for (var i = 0; i < w_t.length; i++) {
+		w_t[i].style.display = "flex";
+	}
+	document.getElementById('undefLang').id = 'russianAnswer';
 }
-// Tip button click
-// 1. Select the tip button
-// 2. Add a click event listener
-// 3. When the button is clicked:
-// 3a. Subtract 1 from the tipLimit
-// 3b. If the tipLimit is still above or equal to 0, generate a new tip
-// 3c. If not, change the button text and look
-function onTipButtonClick() {
-	var tipButton = document.querySelector(".tip-button");
-	tipButton.addEventListener('click', function() {
-		console.log("Hi! Iam an event listener!");
-		tipLimit -=1;
-		if (tipLimit => 0) {
-			 generateTip();
+function wrdTrans() {
+	console.log("Button Word - Translate has been pressed");
+	hideFrstStage();
+	w_t_stage();
+	wordGenerator();	
+}
+
+function transWrd() {
+	console.log("Button Translate - Word has been pressed");
+	hideFrstStage();
+	t_w_stage();
+	wordGenerator();
+}
+
+function changeViewHelp(param) {
+	let hintButton = document.getElementById('hintButton');
+	let hintButton2 = document.getElementById('hintButton2');
+	let answerButton = document.getElementById('answerButton');
+	let answerButton2 = document.getElementById('answerButton2');
+	switch(param) {
+		case "hint":
+			if (hintButton.style.display !== "none") {
+				hintButton.style.display = "none";
+				hintButton2.style.display = "block";
+			} else {
+				hintButton.style.display = "block";
+				hintButton2.style.display = "none";
+			}
+			break;
+		case "answer":
+			if (answerButton.style.display !== "none") {
+				answerButton.style.display = "none";
+				answerButton2.style.display = "block";
+			} else {
+				answerButton.style.display = "block";
+				answerButton2.style.display = "none";
+			}
+			break;
+		default:
+			console.log("function works wrong");	
+	}
+}
+
+function wordIterator(param) {
+	let userInput = document.getElementById('inputForm');
+	let germanWrd = document.getElementById("german");
+	let russianWrd = document.getElementById("russian");
+	let englishWrd = document.getElementById("english");
+	userInput.onkeydown = function (e) {
+		if (e.keyCode == 13 && param === 2) {
+			wordIterator(2);	
+		} else if (e.keyCode == 13) {
+			wordIterator(1);
 		}
-		if (tipLimit == 0) {
-		  tipButton.innerHTML = "See you in another tab!!!";
-			tipButton.classList.add("disabled");
-
-		}
-
-	})
-
+	}
+	if (userInput.value == "" && param === 1) {
+		return false // if input is nothing then nothing	
+	} else if (param === 1 && (userInput.value == germanWrd.innerHTML || userInput.value == russianWrd.innerHTML)) {
+		document.body.style.backgroundColor = '#99e699'; // if true then green
+		document.getElementById("nextButton").style.display = "flex";
+		document.getElementById("yoButton").style.display = "none";
+		return param = 2;
+	} else if (param === 2) {
+		document.getElementById("nextButton").style.display = "none";
+		document.getElementById("yoButton").style.display = "flex";
+		document.body.style.backgroundColor = 'white';
+		userInput.value = "";
+		wordIterator(1)
+	} else if (param === 1) {
+		document.body.style.backgroundColor = '#ffb3b3'; // if input is wrong then rose
+		return
+	} 
+	let rdmNumber = Math.floor((Math.random() * wrdObj.DB.length));	
+	germanWrd.innerHTML = wrdObj.DB[rdmNumber].german;
+	russianWrd.innerHTML = wrdObj.DB[rdmNumber].russian;
+	englishWrd.innerHTML = wrdObj.DB[rdmNumber].english;
+	if (document.getElementById('germanAnswer')) {
+		document.getElementById('germanAnswer').innerHTML = wrdObj.DB[rdmNumber].german;
+	}
+	document.getElementById('russianAnswer').innerHTML = wrdObj.DB[rdmNumber].russian;
+	userInput.focus();
+	wrdObj.DB.splice(rdmNumber, 1); 
+	userInput.value = "";
+	
 }
-onTipButtonClick();
-// Get the first tip
-generateTip();
+//request from words.json****************************************
+function wordGenerator() {
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+		wrdObj = JSON.parse(this.responseText);
+		wordIterator();
+	    }
+	};
+	xmlhttp.open("GET", "./words.json", true);
+	xmlhttp.send();
+}

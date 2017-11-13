@@ -1,0 +1,30 @@
+{
+	"DB":[
+		{"german":"die Mutter","russian":"мама","english":"mother"},
+		{"german":"solange","russian":"до тех пор","english":"so long"},
+		{"german":"voraussichtlich","russian":"вероятно","english":"probably"},
+		{"german":"die Fehler","russian":"ошибка","english":"error"},
+		{"german":"die Vergangenheit","russian":"прошлое","english":"past"},
+		{"german":"der Beitrag","russian":"взнос","english":"contribution"},
+		{"german":"leiden","russian":"страдать","english":"suffer"},
+		{"german":"speichen","russian":"сохранять","english":"save"},
+		{"german":"die Ernährung","russian":"питание","english":"nutrition"},
+		{"german":"der Gegenstand","russian":"тема","english":"theme"},
+		{"german":"weil","russian":"потому что","english":"because"},
+		{"german":"die Übertragung","russian":"перенос","english":"transfer"},
+		{"german":"erlauben","russian":"разрешать","english":"allow"},
+		{"german":"die Ausgabe","russian":"издание","english":"edition"},
+		{"german":"hinzufügen","russian":"добавлять","english":"add"},
+		{"german":"durchschnitt","russian":"среднее","english":"average"},
+		{"german":"demnächst","russian":"скоро","english":"soon"},
+		{"german":"losfahren","russian":"отъезжать","english":"drive off"},
+		{"german":"heften","russian":"колотить","english":"baste"},
+		{"german":"anheften","russian":"присоединять","english":"pin"},
+		{"german":"die Brücke","russian":"мост","english":"brige"},
+		{"german":"wegen","russian":"потому что","english":"because of"},
+		{"german":"der Begriff","russian":"срок","english":"term"},
+		{"german":"die Vergangenheit","russian":"прошлое","english":"past"},
+		{"german":"enttäuscht","russian":"разочарованный","english":"dissapointed"},
+		{"german":"verloren","russian":"потеряный","english":"lost"}
+	]
+}

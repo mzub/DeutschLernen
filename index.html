@@ -1,25 +1,111 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title>JavaScript Tips Tab</title>
-	<link href="https://fonts.googleapis.com/css?family=Oxygen:400" rel="stylesheet" type="text/css">
+	<title>Deutschelerner 0.0.1</title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">	
+	<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
 </head>
 
 <body>
-	<section class="tip">
-		<div class="tip-number">
-			JavaScript Tip
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-sm-12 mainer"><a href="./index.html"><h1 class="title">Deutschlerner</h1></a></div>
 		</div>
-
-		<div class="js-tip"> </div>
-
-		<button class="tip-button">
-			Tips Left: <span class="tip-limit-count"> </span>
-		</button>
-
-	</section>
-
+		<div class="row frstStage">
+			<div class="col-sm-12 frstStage"><h3>Which training do you prefer?</h3></div>
+		</div>
+<!--******************************** Embark ************************************-->
+		<div class="row frstStage">	
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-3">
+				<button type="button" onclick="wrdTrans()" class="btn btn-primary frstStage">Word - Translation</button>	
+			</div>
+			<div class="col-sm-3">
+				<button type="button" onclick="transWrd()" class="btn btn-primary frstStage">Translation - Word</button>	
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>
+<!-- *************************Word - Translation stage ***********************-->
+		<div class="row w_t_stage">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-6">
+				<h3>Please, enter the russian translation of the word:</h3>		
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>
+		<div class="row w_t_stage">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-6">
+				<h3 class="wrd" id="german">Something is wrong</h3>		
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>		
+<!--**************************** Translation - Word stage ************************-->
+		<div class="row t_w_stage">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-6">
+				<h3>Please, enter the german translation of the word:</h3>		
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>		
+		<div class="row t_w_stage">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-6">
+				<h4 class="wrd" id="russian">Что то не так</h4>		
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>		
+<!-- *************************** Input panel *************************-->
+		<div class="row t_w_stage w_t_stage">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-6">
+   				 <div class="input-group">
+					<input id="inputForm" type="text" class="form-control wrd" placeholder="Enter the translation of the word" aria-label="input_germ_word">
+      					<span class="input-group-btn">
+        					<button class="btn btn-light" id="yoButton" type="button" onclick="wordIterator(1)">Yo!</button>
+        					<button class="btn btn-light" id="nextButton" type="button" onclick="wordIterator(2)">Next</button>
+      					</span>
+			  	 </div>
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>
+<!-- *****************************Hint & Answer panel ************************-->
+		<br>
+		<div class="row w_t_stage t_w_stage">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-3 helpPnl" id="hintButton">
+				<button type="button" class="btn btn-light helpBtn" onclick="changeViewHelp('hint')">Hint in English</button>
+			</div>
+			<div class="col-sm-3 helpPnl2" id="hintButton2">
+				<button type="button" id="english" class="btn btn-warning helpBtn" onclick="changeViewHelp('hint')">Hint in English2</button>
+			</div>
+			<div class="col-sm-3 helpPnl" id="answerButton">
+				<button type="button" class="btn btn-light helpBtn" onclick="changeViewHelp('answer')">Right answer</button>
+			</div>
+			<div class="col-sm-3 helpPnl2" id="answerButton2">
+				<button type="button" id="undefLang" class="btn btn-warning helpBtn" onclick="changeViewHelp('answer')">Right answer2</button>
+			</div>
+			<div class="col-sm-3">
+			</div>
+		</div>
+<!--***************************** Sripts *************************************-->
 	<script src="js/main.js"></script>
 </body>
 </html>
