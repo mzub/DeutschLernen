@@ -57,6 +57,11 @@ function changeViewHelp(param) {
 				answerButton2.style.display = "none";
 			}
 			break;
+		case "defaultView":
+			hintButton.style.display = "block";
+			hintButton2.style.display = "none";
+			answerButton.style.display = "block";
+			answerButton2.style.display = "none";
 		default:
 			console.log("function works wrong");	
 	}
@@ -71,12 +76,13 @@ function wordIterator(param) {
 		if (e.keyCode == 13 && param === 2) {
 			wordIterator(2);	
 		} else if (e.keyCode == 13) {
+			changeViewHelp('defaultView');
 			wordIterator(1);
 		}
 	}
 	if (userInput.value == "" && param === 1) {
 		return false // if input is nothing then nothing	
-	} else if (param === 1 && (userInput.value == germanWrd.innerHTML || userInput.value == russianWrd.innerHTML)) {
+	} else if (param === 1 && (userInput.value.toUpperCase() == germanWrd.innerHTML.toUpperCase()  || userInput.value.toUpperCase() == russianWrd.innerHTML.toUpperCase())) {
 		document.body.style.backgroundColor = '#99e699'; // if true then green
 		document.getElementById("nextButton").style.display = "flex";
 		document.getElementById("yoButton").style.display = "none";
@@ -86,7 +92,8 @@ function wordIterator(param) {
 		document.getElementById("yoButton").style.display = "flex";
 		document.body.style.backgroundColor = 'white';
 		userInput.value = "";
-		wordIterator(1)
+		changeViewHelp('defaultView');
+		wordIterator(1);
 	} else if (param === 1) {
 		document.body.style.backgroundColor = '#ffb3b3'; // if input is wrong then rose
 		return

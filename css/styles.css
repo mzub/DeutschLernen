@@ -4,6 +4,18 @@ body {
     font-family: 'Baloo Tammudu', cursive;
 }
 
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.9em;
+}
+
+.container {
+    max-width: 1000px;
+}
+
 .mainer {
     margin-top: 100px; 
 
@@ -14,7 +26,7 @@ div {
 }
 
 .title {
-    font-size: 5em;
+    font-size: 7em;
     font-family: 'Baloo Tammudu', cursive;
     /*color: red;*/
 }
