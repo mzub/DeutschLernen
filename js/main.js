@@ -63,7 +63,7 @@ function changeViewHelp(param) {
 			answerButton.style.display = "block";
 			answerButton2.style.display = "none";
 		default:
-			console.log("function works wrong");	
+			console.log("");	
 	}
 }
 
@@ -72,7 +72,7 @@ function wordIterator(param) {
 	let germanWrd = document.getElementById("german");
 	let russianWrd = document.getElementById("russian");
 	let englishWrd = document.getElementById("english");
-	userInput.onkeydown = function (e) {
+	userInput.onkeydown = function (e) { //use Enter key
 		if (e.keyCode == 13 && param === 2) {
 			wordIterator(2);	
 		} else if (e.keyCode == 13) {
@@ -105,7 +105,9 @@ function wordIterator(param) {
 	if (document.getElementById('germanAnswer')) {
 		document.getElementById('germanAnswer').innerHTML = wrdObj.DB[rdmNumber].german;
 	}
-	document.getElementById('russianAnswer').innerHTML = wrdObj.DB[rdmNumber].russian;
+	if (document.getElementById('russianAnswer')) {
+		document.getElementById('russianAnswer').innerHTML = wrdObj.DB[rdmNumber].russian;
+	}
 	userInput.focus();
 	wrdObj.DB.splice(rdmNumber, 1); 
 	userInput.value = "";
