@@ -25,6 +25,21 @@
 		{"german":"der Begriff","russian":"срок","english":"term"},
 		{"german":"die Vergangenheit","russian":"прошлое","english":"past"},
 		{"german":"enttäuscht","russian":"разочарованный","english":"dissapointed"},
-		{"german":"verloren","russian":"потеряный","english":"lost"}
+		{"german":"verloren","russian":"потеряный","english":"lost"},
+		{"german":"eigenartig","russian":"особенно","english":"peculiarly"},
+		{"german":"der Verzug","russian":"задержка","english":"delay"},
+		{"german":"die Spannung","russian":"напряжение","english":"tension"},
+		{"german":"die Verhandlungen","russian":"переговоры","english":"negotiations"},
+		{"german":"der Stumme","russian":"немой","english":"mute"},
+		{"german":"der Schnitt","russian":"разрез","english":"incision"},
+		{"german":"die Verbreitung","russian":"распростанение","english":"spread"},
+		{"german":"leider","russian":"к сожалению","english":"unfortunately"},
+		{"german":"lauten","russian":"считывать","english":"read"},
+		{"german":"versetzen","russian":"смещать","english":"offset"},
+		{"german":"ersetzen","russian":"замещать","english":"replace"},
+		{"german":"stumpfe","russian":"тусклый","english":"dull"},
+		{"german":"einsam","russian":"одинокий","english":"lonely"},
+		{"german":"das Lagerhaus","russian":"склад","english":"storehouse "}
+
 	]
 }

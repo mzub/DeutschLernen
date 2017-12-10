@@ -62,6 +62,11 @@ function changeViewHelp(param) {
 			hintButton2.style.display = "none";
 			answerButton.style.display = "block";
 			answerButton2.style.display = "none";
+			break;
+		case "disabled":
+			hintButton.firstElementChild.disabled = true;
+			answerButton.firstElementChild.disabled = true;
+			break;
 		default:
 			console.log("");	
 	}
@@ -72,18 +77,24 @@ function wordIterator(param) {
 	let germanWrd = document.getElementById("german");
 	let russianWrd = document.getElementById("russian");
 	let englishWrd = document.getElementById("english");
-	userInput.onkeydown = function (e) { //use Enter key
+	userInput.onkeydown = function (e) { //**************************** usage of a keyboard 
 		if (e.keyCode == 13 && param === 2) {
 			wordIterator(2);	
 		} else if (e.keyCode == 13) {
 			changeViewHelp('defaultView');
 			wordIterator(1);
 		}
+		if (e.ctrlKey && e.shiftKey && e.keyCode == 49) {
+			changeViewHelp('hint');
+		}
+		if (e.ctrlKey && e.shiftKey && e.keyCode == 50) {
+			changeViewHelp('answer');
+		}
 	}
 	if (userInput.value == "" && param === 1) {
 		return false // if input is nothing then nothing	
 	} else if (param === 1 && (userInput.value.toUpperCase() == germanWrd.innerHTML.toUpperCase()  || userInput.value.toUpperCase() == russianWrd.innerHTML.toUpperCase())) {
-		document.body.style.backgroundColor = '#99e699'; // if true then green
+		document.body.style.backgroundColor = '#b5e7a0'; // if true then green
 		document.getElementById("nextButton").style.display = "flex";
 		document.getElementById("yoButton").style.display = "none";
 		return param = 2;
@@ -110,6 +121,13 @@ function wordIterator(param) {
 	}
 	userInput.focus();
 	wrdObj.DB.splice(rdmNumber, 1); 
+	if (wrdObj.DB.length == 0) {
+		userInput.disabled = true;
+		changeViewHelp('disabled');
+		russianWrd.innerHTML = "Well done! You've reached the end of your dictionary."
+		germanWrd.innerHTML = "Well done! You've reached the end of your dictionary."
+		russianWrd.innerHTML = "Well done! You've reached the end of your dictionary."
+	}
 	userInput.value = "";
 	
 }
