@@ -9,7 +9,7 @@ body {
 }
 
 .title {
-    font-size: 4rem;
+    font-size: 4.6rem;
     font-family: 'Baloo Tammudu', cursive;
     /*color: red;*/
 }
@@ -36,7 +36,7 @@ h3 {
 }
 
 div {
-    padding-top: 0.5rem;
+    padding-top: ;
 }
 
 .w_t_stage {
@@ -53,7 +53,7 @@ div {
 }
 
 .helpBtn { 
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -81,7 +81,7 @@ a:active {
 .btn-primary {
     height: ;
     border-radius: 0.5rem;
-    padding-top: 1.2rem;
+    padding-top: 1.4rem;
 }
 
 .wrd {
@@ -90,4 +90,11 @@ a:active {
 
 #nextButton {
     display: none;
+}
+
+.hotKeyHelp {
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.4rem;
+    color: #A9A9A9;
+    padding-top: 0rem;
 }
