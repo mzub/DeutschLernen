@@ -90,6 +90,9 @@ function wordIterator(param) {
 		if (e.ctrlKey && e.shiftKey && e.keyCode == 50) {
 			changeViewHelp('answer');
 		}
+		if (e.ctrlKey || e.shiftKey || e.altKey || e.keyCode >= 0) {
+			document.body.style.backgroundColor = 'white';
+		}
 	}
 	if (userInput.value == "" && param === 1) {
 		return false // if input is nothing then nothing	
@@ -107,7 +110,7 @@ function wordIterator(param) {
 		wordIterator(1);
 	} else if (param === 1) {
 		document.body.style.backgroundColor = '#ffb3b3'; // if input is wrong then rose
-		return
+		wordIterator(1);
 	} 
 	let rdmNumber = Math.floor((Math.random() * wrdObj.DB.length));	
 	germanWrd.innerHTML = wrdObj.DB[rdmNumber].german;
