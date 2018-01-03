@@ -90,7 +90,7 @@ function wordIterator(param) {
 		if (e.ctrlKey && e.shiftKey && e.keyCode == 50) {
 			changeViewHelp('answer');
 		}
-		if (e.ctrlKey || e.shiftKey || e.altKey || e.keyCode >= 0) {
+		if ((e.ctrlKey || e.shiftKey || e.altKey || e.keyCode >= 0) && (document.body.style.backgroundColor == 'rgb(255, 179, 179)')) {
 			document.body.style.backgroundColor = 'white';
 		}
 	}
