@@ -33,6 +33,13 @@ function transWrd() {
 	wordGenerator();
 }
 
+makeCounter = (function makeCounter() {
+	var counter = 2;
+	return function () {
+		return counter++;
+	}
+})();
+
 function changeViewHelp(param) {
 	let hintButton = document.getElementById('hintButton');
 	let hintButton2 = document.getElementById('hintButton2');
@@ -77,6 +84,9 @@ function wordIterator(param) {
 	let germanWrd = document.getElementById("german");
 	let russianWrd = document.getElementById("russian");
 	let englishWrd = document.getElementById("english");
+	if (param == 2) {
+		document.getElementById("counter").innerHTML = makeCounter();
+	}
 	userInput.onkeydown = function (e) { //**************************** usage of a keyboard 
 		if (e.keyCode == 13 && param === 2) {
 			wordIterator(2);	
@@ -124,12 +134,12 @@ function wordIterator(param) {
 	}
 	userInput.focus();
 	wrdObj.DB.splice(rdmNumber, 1); 
-	if (wrdObj.DB.length == 0) {
+		if (document.getElementById("counter").innerHTML == 20) {
 		userInput.disabled = true;
 		changeViewHelp('disabled');
-		russianWrd.innerHTML = "Well done! You've reached the end of your dictionary."
-		germanWrd.innerHTML = "Well done! You've reached the end of your dictionary."
-		russianWrd.innerHTML = "Well done! You've reached the end of your dictionary."
+		russianWrd.innerHTML = "Well done! This is the end of your training."
+		germanWrd.innerHTML = "Well done! This is the end of your training."
+		russianWrd.innerHTML = "Well done! This ist the end of your training."
 	}
 	userInput.value = "";
 	
