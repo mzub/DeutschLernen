@@ -134,7 +134,8 @@ function wordIterator(param) {
 	}
 	userInput.focus();
 	wrdObj.DB.splice(rdmNumber, 1); 
-		if (document.getElementById("counter").innerHTML == 20) {
+		if (document.getElementById("counter").innerHTML == 21) {
+		document.getElementById("counter").innerHTML = 20;
 		userInput.disabled = true;
 		changeViewHelp('disabled');
 		russianWrd.innerHTML = "Well done! This is the end of your training."
