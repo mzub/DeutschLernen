@@ -47,6 +47,15 @@ div {
     display: none;
 }
 
+#basic-addon1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+#yoButton, #nextButton {
+    padding-top: 0.9rem;
+}
+
 #hintButton2, #answerButton2 { 
     display: none; 
     font-family: 'Roboto Slab', serif;
