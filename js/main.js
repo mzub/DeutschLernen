@@ -5,42 +5,54 @@ function hideFrstStage() {
 	}
 }
 
-function t_w_stage() { // Russian --> German
+function t_w_stage() { // Russian --> German _____Show the transWrd stage
 	var t_w = document.getElementsByClassName('t_w_stage');
 	for (var i = 0; i < t_w.length; i++) {
 		t_w[i].style.display = "flex";
 	}
 	document.getElementById('undefLang').id = 'germanAnswer';
 }	  
-function w_t_stage() { // German --> Russian
+function w_t_stage() { // German --> Russian _________ Show the Word trans stage
 	var w_t = document.getElementsByClassName('w_t_stage');
 	for (var i = 0; i < w_t.length; i++) {
 		w_t[i].style.display = "flex";
 	}
 	document.getElementById('undefLang').id = 'russianAnswer';
 }
-function wrdTrans() {
+function wrdTrans() { //button function to start a chain of events
 	console.log("Button Word - Translate has been pressed");
 	hideFrstStage();
 	w_t_stage();
 	wordGenerator();	
 }
 
-function transWrd() {
+function transWrd() { //button function ot start a chain of events
 	console.log("Button Translate - Word has been pressed");
 	hideFrstStage();
 	t_w_stage();
 	wordGenerator();
 }
 
-makeCounter = (function makeCounter() {
+makeCounter = (function makeCounter() { // crate a counter
 	var counter = 2;
 	return function () {
 		return counter++;
 	}
 })();
 
-function changeViewHelp(param) {
+window.onkeydown = function (e) { // Hotkey for starscrenn. Choose the button of needed training
+	let x = document.getElementsByClassName('row frstStage');
+	if (x[0].style.display == "") {
+		if (e.keyCode == 49) {
+			wrdTrans();
+		}
+		if (e.keyCode == 50) {
+			transWrd();	
+		}
+	}
+}
+
+function changeViewHelp(param) { // change view of help buttons
 	let hintButton = document.getElementById('hintButton');
 	let hintButton2 = document.getElementById('hintButton2');
 	let answerButton = document.getElementById('answerButton');
@@ -79,7 +91,7 @@ function changeViewHelp(param) {
 	}
 }
 
-function wordIterator(param) {
+function wordIterator(param) { // Generator of words
 	let userInput = document.getElementById('inputForm');
 	let germanWrd = document.getElementById("german");
 	let russianWrd = document.getElementById("russian");
