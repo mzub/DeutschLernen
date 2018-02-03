@@ -150,6 +150,7 @@ function wordIterator(param) { // Generator of words
 		document.getElementById("counter").innerHTML = 20;
 		userInput.disabled = true;
 		changeViewHelp('disabled');
+		document.getElementById("yoButton").disabled = true;
 		russianWrd.innerHTML = "Well done! This is the end of your training."
 		germanWrd.innerHTML = "Well done! This is the end of your training."
 		russianWrd.innerHTML = "Well done! This ist the end of your training."
