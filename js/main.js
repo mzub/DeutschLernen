@@ -97,9 +97,12 @@ function wordIterator(param) { // Generator of words
 	let russianWrd = document.getElementById("russian");
 	let englishWrd = document.getElementById("english");
 	if (param == 2) {
-		document.getElementById("counter").innerHTML = makeCounter();
+		document.getElementById("counter").innerHTML = makeCounter(); // change the word counter number
 	}
 	userInput.onkeydown = function (e) { //**************************** usage of a keyboard 
+		if ((e.ctrlKey || e.shiftKey || e.altKey || e.keyCode >= 0) && (document.body.style.backgroundColor == 'rgb(255, 179, 179)')) {
+			document.body.style.backgroundColor = 'white';
+		}
 		if (e.keyCode == 13 && param === 2) {
 			wordIterator(2);	
 		} else if (e.keyCode == 13) {
@@ -111,9 +114,6 @@ function wordIterator(param) { // Generator of words
 		}
 		if (e.ctrlKey && e.shiftKey && e.keyCode == 50) {
 			changeViewHelp('answer');
-		}
-		if ((e.ctrlKey || e.shiftKey || e.altKey || e.keyCode >= 0) && (document.body.style.backgroundColor == 'rgb(255, 179, 179)')) {
-			document.body.style.backgroundColor = 'white';
 		}
 	}
 	if (userInput.value == "" && param === 1) {
@@ -132,21 +132,73 @@ function wordIterator(param) { // Generator of words
 		wordIterator(1);
 	} else if (param === 1) {
 		document.body.style.backgroundColor = '#ffb3b3'; // if input is wrong then rose
-		wordIterator(1);
+		//	wordIterator(1);
+		return;
 	} 
-	let rdmNumber = Math.floor((Math.random() * wrdObj.DB.length));	
-	germanWrd.innerHTML = wrdObj.DB[rdmNumber].german;
-	russianWrd.innerHTML = wrdObj.DB[rdmNumber].russian;
-	englishWrd.innerHTML = wrdObj.DB[rdmNumber].english;
-	if (document.getElementById('germanAnswer')) {
-		document.getElementById('germanAnswer').innerHTML = wrdObj.DB[rdmNumber].german;
+	if (document.getElementById("counter").innerHTML < 2) {
+		let rdmNumber = Math.floor((Math.random() * ancientWrdArr.length));	
+		germanWrd.innerHTML = ancientWrdArr[rdmNumber].german;
+		russianWrd.innerHTML = ancientWrdArr[rdmNumber].russian;
+		englishWrd.innerHTML = ancientWrdArr[rdmNumber].english;
+		if (document.getElementById('germanAnswer')) {
+			document.getElementById('germanAnswer').innerHTML = ancientWrdArr[rdmNumber].german;
+		}
+		if (document.getElementById('russianAnswer')) {
+			document.getElementById('russianAnswer').innerHTML = ancientWrdArr[rdmNumber].russian;
+		}
+		ancientWrdArr.splice(rdmNumber, 1); 
+	} else if (document.getElementById("counter").innerHTML < 4) {
+		let rdmNumber = Math.floor((Math.random() * oldestWrdArr.length));	
+		germanWrd.innerHTML = oldestWrdArr[rdmNumber].german;
+		russianWrd.innerHTML = oldestWrdArr[rdmNumber].russian;
+		englishWrd.innerHTML = oldestWrdArr[rdmNumber].english;
+		if (document.getElementById('germanAnswer')) {
+			document.getElementById('germanAnswer').innerHTML = oldestWrdArr[rdmNumber].german;
+		}
+		if (document.getElementById('russianAnswer')) {
+			document.getElementById('russianAnswer').innerHTML = oldestWrdArr[rdmNumber].russian;
+		}
+		oldestWrdArr.splice(rdmNumber, 1); 
+	} else if (document.getElementById("counter").innerHTML < 8) {
+		let rdmNumber = Math.floor((Math.random() * oldWrdArr.length));	
+		germanWrd.innerHTML = oldWrdArr[rdmNumber].german;
+		russianWrd.innerHTML = oldWrdArr[rdmNumber].russian;
+		englishWrd.innerHTML = oldWrdArr[rdmNumber].english;
+		if (document.getElementById('germanAnswer')) {
+			document.getElementById('germanAnswer').innerHTML = oldWrdArr[rdmNumber].german;
+		}
+		if (document.getElementById('russianAnswer')) {
+			document.getElementById('russianAnswer').innerHTML = oldWrdArr[rdmNumber].russian;
+		}
+		oldWrdArr.splice(rdmNumber, 1); 
+	} else if (document.getElementById("counter").innerHTML < 13) {
+		let rdmNumber = Math.floor((Math.random() * newWrdArr.length));	
+		germanWrd.innerHTML = newWrdArr[rdmNumber].german;
+		russianWrd.innerHTML = newWrdArr[rdmNumber].russian;
+		englishWrd.innerHTML = newWrdArr[rdmNumber].english;
+		if (document.getElementById('germanAnswer')) {
+			document.getElementById('germanAnswer').innerHTML = newWrdArr[rdmNumber].german;
+		}
+		if (document.getElementById('russianAnswer')) {
+			document.getElementById('russianAnswer').innerHTML = newWrdArr[rdmNumber].russian;
+		}
+		newWrdArr.splice(rdmNumber, 1); 
+	} else {
+		let rdmNumber = Math.floor((Math.random() * newestWrdArr.length));	
+		germanWrd.innerHTML = newestWrdArr[rdmNumber].german;
+		russianWrd.innerHTML = newestWrdArr[rdmNumber].russian;
+		englishWrd.innerHTML = newestWrdArr[rdmNumber].english;
+		if (document.getElementById('germanAnswer')) {
+			document.getElementById('germanAnswer').innerHTML = newestWrdArr[rdmNumber].german;
+		}
+		if (document.getElementById('russianAnswer')) {
+			document.getElementById('russianAnswer').innerHTML = newestWrdArr[rdmNumber].russian;
+		}
+		newestWrdArr.splice(rdmNumber, 1); 
 	}
-	if (document.getElementById('russianAnswer')) {
-		document.getElementById('russianAnswer').innerHTML = wrdObj.DB[rdmNumber].russian;
-	}
+
 	userInput.focus();
-	wrdObj.DB.splice(rdmNumber, 1); 
-		if (document.getElementById("counter").innerHTML == 21) {
+	if (document.getElementById("counter").innerHTML == 21) {
 		document.getElementById("counter").innerHTML = 20;
 		userInput.disabled = true;
 		changeViewHelp('disabled');
@@ -164,6 +216,11 @@ function wordGenerator() {
 	xmlhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
 		wrdObj = JSON.parse(this.responseText);
+		ancientWrdArr = wrdObj.DB.slice(0, Math.floor(wrdObj.DB.length * 0.05)); // creates an object of ancient words (5% of wrdObj)
+		oldestWrdArr = wrdObj.DB.slice(ancientWrdArr.length, Math.floor(wrdObj.DB.length * 0.15)); // creates an object of oldest words (10% of wrdObj)
+		oldWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length), Math.floor(wrdObj.DB.length * 0.35)); // creates an object of old words (20% of wrdObj)
+		newWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length + oldWrdArr.length), Math.floor(wrdObj.DB.length * 0.60)); // creates an object of new words (25% of wrdObj)
+		newestWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length + oldWrdArr.length + newWrdArr.length)); // creates an object of newest words (40% of wrdObj)
 		wordIterator();
 	    }
 	};
