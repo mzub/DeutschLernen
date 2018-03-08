@@ -218,9 +218,9 @@ function wordGenerator() {
 		wrdObj = JSON.parse(this.responseText);
 		ancientWrdArr = wrdObj.DB.slice(0, Math.floor(wrdObj.DB.length * 0.05)); // creates an object of ancient words (5% of wrdObj)
 		oldestWrdArr = wrdObj.DB.slice(ancientWrdArr.length, Math.floor(wrdObj.DB.length * 0.15)); // creates an object of oldest words (10% of wrdObj)
-		oldWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length), Math.floor(wrdObj.DB.length * 0.35)); // creates an object of old words (20% of wrdObj)
-		newWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length + oldWrdArr.length), Math.floor(wrdObj.DB.length * 0.60)); // creates an object of new words (25% of wrdObj)
-		newestWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length + oldWrdArr.length + newWrdArr.length)); // creates an object of newest words (40% of wrdObj)
+		oldWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length), Math.floor(wrdObj.DB.length * 0.30)); // creates an object of old words (15% of wrdObj)
+		newWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length + oldWrdArr.length), Math.floor(wrdObj.DB.length * 0.50)); // creates an object of new words (20% of wrdObj)
+		newestWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length + oldWrdArr.length + newWrdArr.length)); // creates an object of newest words (50% of wrdObj)
 		wordIterator();
 	    }
 	};
