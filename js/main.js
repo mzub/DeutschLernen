@@ -159,7 +159,7 @@ function wordIterator(param) { // Generator of words
 			document.getElementById('russianAnswer').innerHTML = oldestWrdArr[rdmNumber].russian;
 		}
 		oldestWrdArr.splice(rdmNumber, 1); 
-	} else if (document.getElementById("counter").innerHTML < 8) {
+	} else if (document.getElementById("counter").innerHTML < 7) {
 		let rdmNumber = Math.floor((Math.random() * oldWrdArr.length));	
 		germanWrd.innerHTML = oldWrdArr[rdmNumber].german;
 		russianWrd.innerHTML = oldWrdArr[rdmNumber].russian;
@@ -171,7 +171,7 @@ function wordIterator(param) { // Generator of words
 			document.getElementById('russianAnswer').innerHTML = oldWrdArr[rdmNumber].russian;
 		}
 		oldWrdArr.splice(rdmNumber, 1); 
-	} else if (document.getElementById("counter").innerHTML < 13) {
+	} else if (document.getElementById("counter").innerHTML < 12) {
 		let rdmNumber = Math.floor((Math.random() * newWrdArr.length));	
 		germanWrd.innerHTML = newWrdArr[rdmNumber].german;
 		russianWrd.innerHTML = newWrdArr[rdmNumber].russian;
@@ -216,11 +216,11 @@ function wordGenerator() {
 	xmlhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
 		wrdObj = JSON.parse(this.responseText);
-		ancientWrdArr = wrdObj.DB.slice(0, Math.floor(wrdObj.DB.length * 0.05)); // creates an object of ancient words (5% of wrdObj)
-		oldestWrdArr = wrdObj.DB.slice(ancientWrdArr.length, Math.floor(wrdObj.DB.length * 0.15)); // creates an object of oldest words (10% of wrdObj)
-		oldWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length), Math.floor(wrdObj.DB.length * 0.30)); // creates an object of old words (15% of wrdObj)
-		newWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length + oldWrdArr.length), Math.floor(wrdObj.DB.length * 0.50)); // creates an object of new words (20% of wrdObj)
-		newestWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length + oldWrdArr.length + newWrdArr.length)); // creates an object of newest words (50% of wrdObj)
+		ancientWrdArr = wrdObj.DB.slice(0, Math.floor(wrdObj.DB.length * 0.1)); // creates an object of ancient words (10% of wrdObj)
+		oldestWrdArr = wrdObj.DB.slice(ancientWrdArr.length, Math.floor(wrdObj.DB.length * 0.3)); // creates an object of oldest words (20% of wrdObj)
+		oldWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length), Math.floor(wrdObj.DB.length * 0.55)); // creates an object of old words (25% of wrdObj)
+		newWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length + oldWrdArr.length), Math.floor(wrdObj.DB.length * 0.75)); // creates an object of new words (20% of wrdObj)
+		newestWrdArr = wrdObj.DB.slice((ancientWrdArr.length + oldestWrdArr.length + oldWrdArr.length + newWrdArr.length)); // creates an object of newest words (25% of wrdObj)
 		wordIterator();
 	    }
 	};
