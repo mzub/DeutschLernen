@@ -1,0 +1,106 @@
+$mainFont: 'Baloo Tammudu', cursive;
+$secondaryFont: 'Roboto Slab', serif;
+
+@mixin notVisible {
+    display: none;
+}
+
+html {
+	font-size: 30px;
+}
+
+body {
+    text-align: center;
+    background-color: white;
+    font-family: $mainFont;
+}
+
+.title {
+    font-size: 4.6rem;
+    font-family: $mainFont;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.mainer {
+    margin-top: 70px;
+}
+
+.w_t_stage {
+    @include notVisible;
+}
+
+.t_w_stage {
+    @include notVisible;
+}
+
+#basic-addon1 {
+    font: {
+	family: $secondaryFont;
+	weight: bold;
+    }
+}
+
+#yoButton, #nextButton {
+    padding-top: 0.9rem;
+}
+
+#hintButton2, #answerButton2 {
+    @include notVisible;
+    font-family: $secondaryFont;
+}
+
+.helpBtn {
+    font: {
+	size: 0.85rem;
+	family: $secondaryFont;
+    }
+}
+
+a {
+    color: #000066;
+    background-color: transparent;
+    text-decoration: none;
+    &:link {@extend a};
+    &:visited {@extend a};
+    &:hover {@extend a};
+    &:active {@extend a};
+}
+
+.btn-primary {
+    border-radius: 0.5rem;
+    padding-top: 1.4rem;
+}
+
+.wrd {
+    font-family: $secondaryFont;
+}
+
+#nextButton {
+    @include notVisible;
+}
+
+.hotKey {
+    font: {
+	family: $secondaryFont;
+	size: 0.4rem;
+    }
+    color: #A9A9A9;
+    padding-top: 0rem;
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    html {
+	font-size: 20px;
+	}
+}
