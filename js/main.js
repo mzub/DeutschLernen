@@ -109,10 +109,10 @@ function wordIterator(param) { // Generator of words
 			changeViewHelp('defaultView');
 			wordIterator(1);
 		}
-		if (e.ctrlKey && e.shiftKey && e.keyCode == 49) {
+		if (e.keyCode == 32 && e.keyCode == 49) {
 			changeViewHelp('hint');
 		}
-		if (e.ctrlKey && e.shiftKey && e.keyCode == 50) {
+		if (e.keyCode == 32 && e.keyCode == 50) {
 			changeViewHelp('answer');
 		}
 	}
