@@ -13,7 +13,7 @@
 		{"german":"einsam","russian":"одиноко","english":"loner"},
 		{"german":"leider","russian":"к сожалению","english":"unfortunately"},
 		{"german":"lauten","russian":"гласить","english":"read"},
-		{"german":"gleich","russian":"равный","english":"same"},
+		{"german":"gleichen","russian":"равный","english":"same"},
 		{"german":"retten","russian":"спасать","english":"rescure"},
 		{"german":"die Kraft","russian":"сила","english":"force"},
 		{"german":"fast","russian":"почти","english":"almost"},
@@ -166,6 +166,7 @@
 		{"german":"verfügbar","russian":"доступный","english":"available"},
 		{"german":"unheimlich","russian":"страшно","english":"creepy"},
 		{"german":"wecken","russian":"пробуждать","english":"wake up"},
+		{"german":"zumindest","russian":"по крайней мере","english":"at least"},
 		{"german":"der Nutzer","russian":"пользователь","english":"user"},
 		{"german":"übrigens","russian":"кстати говоря","english":"by the way"},
 		{"german":"die Lüge","russian":"ложь","english":"lie"},
@@ -258,7 +259,7 @@
 		{"german":"einige","russian":"некоторые","english":"some"},
 		{"german":"langweilig","russian":"скучно","english":"boring"},
 		{"german":"die Blase","russian":"пузырь","english":"bubble"},
-		{"german":"umstritten","russian":"спорный","english":"controversial"},
+		{"german":"umstrittene","russian":"спорный","english":"controversial"},
 		{"german":"die Anrede","russian":"обращение","english":"form of address"},
 		{"german":"entsprechend","russian":"соответственно","english":"corresponding"},
 		{"german":"neugierig","russian":"любопытный","english":"curious"},
@@ -1114,7 +1115,7 @@
 	{"german":"der Bezug","russian":"ссылка","english":"reference"},
 	{"german":"Ungarn","russian":"Венгрия","english":"Hungary"},
 	{"german":"die Gemeinschaft","russian":"сообщество","english":"community"},
-	{"german":"der Umgang","russian":"общение","english":"handling"},
+	{"german":"der Umgang","russian":"держать что-то в руках","english":"handling"},
 	{"german":"der Fallschirm","russian":"парашют","english":"parachute"},
 	{"german":"der Kiefer","russian":"сосна","english":"pine"},
 	{"german":"der Schnurrbart","russian":"усы","english":"mustache"},
@@ -1289,7 +1290,7 @@
 	{"german":"der Fachmann","russian":"эксперт","english":"expert"},
 	{"german":"der Beamte","russian":"должностное лицо","english":"official"},
 	{"german":"das Taschentuch","russian":"носовой платок","english":"handkerchief"},
-	{"german":"die Staffel","russian":"эстафета, эскадрон, реле","english":"relay race, squadron, relay"},
+	{"german":"die Staffel","russian":"эстафета, эксадрон, реле","english":"relay race, squadron, relay"},
 	{"german":"die Motte","russian":"мотылек, моль","english":"moth"},
 	{"german":"der Kleiderbügel","russian":"вешалка для одежды","english":"hanger"},
 	{"german":"krumm","russian":"изогнутый, мошеннический","english":"crooked"},
@@ -1303,7 +1304,7 @@
 	{"german":"untröstlich","russian":"безутешный","english":"inconsolable"},
 	{"german":"der Verehrer","russian":"обожатель","english":"admirer"},
 	{"german":"verfügen","russian":"располагать","english":"will"},
-	{"german":"anziehen","russian":"привлекать, надевать, натягивать","english":"attract, put on, tighten"},
+	{"german":"anziehen","russian":"привелкать, надевать, натягивать","english":"attract, put on, tighten"},
 	{"german":"schräg","russian":"косой","english":"aslant"},
 	{"german":"die Schlittschuhe","russian":"коньки","english":"skates"},
 	{"german":"mitnehmen","russian":"брать с собой","english":"take"},
@@ -1345,7 +1346,7 @@
 	{"german":"der Ruhm","russian":"слава","english":"glory"},
 	{"german":"berufen","russian":"назначать","english":"appoint"},
 	{"german":"gewaltig","russian":"огромный","english":"enormous"},
-	{"german":"rechlich","russian":"обильно","english":"apmly"},
+	{"german":"amply","russian":"пространно","english":"apmly"},
 	{"german":"verziehen","russian":"искажать","english":"warp"},
 	{"german":"angewöhnen","russian":"привыкать","english":"get used to"},
 	{"german":"beinahe","russian":"почти","english":"nearly"},
@@ -1411,171 +1412,7 @@
 	{"german":"hager","russian":"тощий","english":"gaunt"},
 	{"german":"unmittelbar","russian":"немедленно","english":"immediately"},
 	{"german":"erzwingen","russian":"вынуждать","english":"force"},
-	{"german":"rutschen","russian":"скользить","english":"slip1"},
-	{"german":"bellen","russian":"лаять","english":"bark"},
-die Rinde	кора	bark
-der Auszug	выписка	abstract
-das Hufeisen	подкова	horseshoe
-der Stier	бык	bull
-das Huhn	курица	chicken
-blöken	блеять	bleat
-der Gewerkschaftsbundes	профсоюзная конфедерация	labor union Confederation
-die Gewerkschaft	профсоюз	labor union
-die Sprechstunde	консультация	consultation
-je eine	по одному	per one
-zerstreut	отвлеченный	distracted
-taumeln	шататься при ходьбе	stagger
-aufgeregt	возбужденный	excited
-das Eizenteil	деталь	detail
-bestehen aus	состоять из	consist of
-sich vorstellen	представиться	introduce oneself
-die Mühe	усилие	effort
-der Fahrgast	пассажир	passenger
-der Sauerstoff	кислород	oxygen
-das Fach	отсек	compartment
-der Wandel	изменение	change
-einzig	только	only
-preiswert	недорогой	inexpensive
-die Liebeserklärung	признание в любви	declaration of love
-beschimpfen	оскорблять	insult
-belästigen	беспокоить	bother
-Promi	знаменитость	celebrity
-rauben	грабить	rob
-gönnen	даровать	grant
-das Gerücht	слух	rumor
-verdampfen	испраряться	evaporate
-das Einmaleins	таблица умножения	multiplication table
-die Seitensprung	неверность	infidelity
-spucken	плевать	spit
-der Wahnsinn	безумие	madness
-die Unzulänglichkeit	неадекватность	inadequacy
-der Ableger	росток, ответвление	offshoot
-das Geschehnis	событие	event
-die Hinterlassenschaft	наследие	legacy
-vernichten	уничтожать	destroy
-die Begegnung	столкновение	encounter
-der Rand	край	edge
-rätselhaft	загадочно	enigmatic
-drogensüchtig	наркозависимый	drag addict
-die Droge	наркотик, лекарственной средство	drug
-die Rüstung	броня	armor
-die Enttäuschung 	разочарование	disappointment
-stammen	происходить родом из	come
-der Ursprung	происхождение	origin
-das Gebiet	район, область	area
-der Schmied	кузнец	smith
-schmieden	ковать	forge
-die Glocke	колокол	bell
-beweglich	подвижный	movable
-nach unten weisend	направленный вниз	pointing down
-die Öffnung	открытие, отверстие	opening, hole
-warnen	предупреждать	warn
-überholen	обгонять	overrun
-mühelos	без особых усилий	effortessly
-die Erlaubnis	разрешение	permission
-der Rennwagen	гоночный автомобиль	race car
-durchmachen	проходить через что-то	go through
-erschütternd	шокирующий	shocking
-der Bonbon	леденец	sweet
-die Gliederung	структура	structure
-verwahrlosen	запускать в негодность	neglect
-der Lohn	заработная плата	wage
-ausschalten	выключать	turn off
-erwischen	заставать	catch
-das Verhältnis	соотношение	ratio
- die Mangel	нехватка	lack
-der Erzieher	воспитатель	educator
-versagen	терпеть неудачу	fail
-die Einrichtung	объект	facility
-schiefgehen	не получаться	go wrong
-kündigen	прекращать	cancel
-betrachten	рассматривать	consider
-zufällig	случайно	accidentally
-der Nebenfluss	приток	tributary
-das Schach	шахматы	chess
-das Brett	доска	board
-inwiefern	до какой степени	to what extent
-erfahren	узнавать	experience
-die Ausbeutung	эксплуатация	exploitation
-anwachsen	вырастать	grow
-brühen	заваривать	brew
-der Feierabend	конец рабочего дня	the end of a working day
-die Ewigkeit	вечность	eternity
-das Kleeblatt	клеверный лист	cloverleaf
-aufmerksam	внимательно	attentively
-die Wirkung	эффект	effect
-die Nebenwirkung	побочные эффекты	side effects
-die Rache	месть	revenge, vengeance
-der Mord	убийство	murder
-niederstechen	ударять ножом	stab
-vortrefflich	отлично	excellent
-der Verein	общество	society
-ehrenamtlich	не оплачиваемый	unsalaried
-engagieren	вовлекать	engage
-leisten	выполнять	perform
-auskommen	проходить	go by
-frankieren	откровенный	frank
-tarnen	маскировать	disguise
-die Lanze	копье	lance
-das Sparbuch	депозитная книжка	passbook
-geil	классный, похотливый	cool, horny
-anrempeln	толкаться	jostle
-dauernd	постоянно	constantly
-die Amtzeit	условия владения недвижимостью, землей	tenure
-versöhnen	примирять	reconcile
-die Empfehlung	рекомендация	recommendation
-der Daumen	большой палец руки	thumb
-die Schraube	винт	screw
-das Gewinde	резьба	thread
-der Schraubendreher	отвертка	screwdriver
-befestigen	фиксировать	fix
-der Unsinn	вздор	nonsence
-der Bürgersteig	тротуар	side walk
-das Pflaster	пластырь	plaster
-avid	алчный	avid
-der Nachschub	снабжение	supplies
-gelaunt	веселый	humored
-peilen	прицеливание	aimnig
-prügeln	бить	beat
-die Krähe	ворона	crow
-tagsüber	в течение дня	during the day
-denkwürdig	памятный	memorable
-der Überfall	налет	raid
-der Komplize	соучастник	accomplice
-quer	крест-накрест	crosswise
-lahmgelegt	парализованный	paralyzed
-lahmlegen	перализовывать	paralyze
-die Lücke	разрыв	gap
-der Scheitel	вершина	vertex
-künftig	в будущем	in future
-zahm	приручать	tame
-weigern	отрицать	deny
-der Schuft	негодяй	blackguard
-lügen	лгать	lie
-gemein	общий, мерзкий	common, nasty
-beweisen	доказывать	prove
-der Golf	залив	bay
-ratschen	болтать	blather
-die Trümmer	обломки	debris
-der Albtraum	кошмар	nightmare
-der Spitzenreiter	лидер	leader
-vorzüglich	отлично	excellent
-tapfer	отважный	brave
-die Bohne	боб	bean
-der Sumpf	болото	swamp
-die Viehzucht	скотоводство	cattle breeding
-die die Zucht	разведение	breed
-klopfen	стучать	beat
-die Aufregung	волнение	exitement
-der Schrot	дробь	shot
-der Mist	навоз	manure
-der Zeiger	указатель, стрелка	pointer
-die Umstellung	переключатель	switch
-tollpatschig	топорный	clumsy
-vorführen	демонстрировать	demonstrate
-ausführlich	подробно	in detail
-irgendeinen	любой	any
-zuspruch	одобрение	encouragement
+	{"german":"rutschen","russian":"скользить","english":"slip1"}
 
 
 
