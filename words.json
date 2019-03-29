@@ -683,7 +683,7 @@
 	{"german":"verwirren","russian":"запутывать","english":"confuse"},
 	{"german":"die Angaben","russian":"информация","english":"information"},
 	{"german":"vorrätig","russian":"доступный","english":"available"},
-	{"german":"anregen","russian":"возбуждать","english":"exite"},
+	{"german":"anregen","russian":"возбуждать","english":"excite"},
 	{"german":"weiblich","russian":"женский","english":"female"},
 	{"german":"die Panne","russian":"неисправность","english":"malfunction"},
 	{"german":"die Bühne","russian":"сцена","english":"stage"},
@@ -1138,7 +1138,7 @@
 	{"german":"schleichen","russian":"красться","english":"sneak"},
 	{"german":"leuchten","russian":"светить","english":"shine"},
 	{"german":"fromm","russian":"благочестивый","english":"religious"},
-	{"german":"aufregend","russian":"возбуждающий","english":"eciting"},
+	{"german":"aufregend","russian":"возбуждающий","english":"exciting"},
 	{"german":"bequem","russian":"удобный","english":"comfortable"},
 	{"german":"der Buchstabe","russian":"буква","english":"letter"},
 	{"german":"der Schreiner","russian":"плотник","english":"carpenter"},
@@ -1443,7 +1443,7 @@
 	{"german":"rauben","russian":"грабить","english":"rob"},
 	{"german":"gönnen","russian":"даровать","english":"grant"},
 	{"german":"das Gerücht","russian":"слух","english":"rumor"},
-	{"german":"verdampfen","russian":"испраряться","english":"evaporate"},
+	{"german":"verdampfen","russian":"испаряться","english":"evaporate"},
 	{"german":"das Einmaleins","russian":"таблица умножения","english":"multiplication table"},
 	{"german":"die Seitensprung","russian":"неверность","english":"infidelity"},
 	{"german":"spucken","russian":"плевать","english":"spit"},
@@ -1457,7 +1457,7 @@
 	{"german":"der Rand","russian":"край","english":"edge"},
 	{"german":"rätselhaft","russian":"загадочно","english":"enigmatic"},
 	{"german":"drogensüchtig","russian":"наркозависимый","english":"drag addict"},
-	{"german":"die Droge","russian":"наркотик, лекарственной средство","english":"drug"},
+	{"german":"die Droge","russian":"наркотик, лекарственное средство","english":"drug"},
 	{"german":"die Rüstung","russian":"броня","english":"armor"},
 	{"german":"die Enttäuschung ","russian":"разочарование","english":"disappointment"},
 	{"german":"stammen","russian":"происходить родом из","english":"come"},
@@ -1544,7 +1544,7 @@
 	{"german":"der Komplize","russian":"соучастник","english":"accomplice"},
 	{"german":"quer","russian":"крест-накрест","english":"crosswise"},
 	{"german":"lahmgelegt","russian":"парализованный","english":"paralyzed"},
-	{"german":"lahmlegen","russian":"перализовывать","english":"paralyze"},
+	{"german":"lahmlegen","russian":"парализовывать","english":"paralyze"},
 	{"german":"die Lücke","russian":"разрыв","english":"gap"},
 	{"german":"der Scheitel","russian":"вершина","english":"vertex"},
 	{"german":"künftig","russian":"в будущем","english":"in future"},
@@ -1566,7 +1566,7 @@
 	{"german":"die Viehzucht","russian":"скотоводство","english":"cattle breeding"},
 	{"german":"die Zucht","russian":"разведение","english":"breed"},
 	{"german":"klopfen","russian":"стучать","english":"beat"},
-	{"german":"die Aufregung","russian":"волнение","english":"exitement"},
+	{"german":"die Aufregung","russian":"волнение","english":"excitement"},
 	{"german":"der Schrot","russian":"дробь","english":"shot"},
 	{"german":"der Mist","russian":"навоз","english":"manure"},
 	{"german":"der Zeiger","russian":"указатель, стрелка","english":"pointer"},
@@ -1575,8 +1575,140 @@
 	{"german":"vorführen","russian":"демонстрировать","english":"demonstrate"},
 	{"german":"ausführlich","russian":"подробно","english":"in detail"},
 	{"german":"irgendeinen","russian":"любой","english":"any"},
-	{"german":"zuspruch","russian":"одобрение","english":"encouragement"}
-
+	{"german":"zuspruch","russian":"одобрение","english":"encouragement"},
+	der Einsteiger	начинающий	beginner
+	abschieben	депортировать	deport
+	erbosen	бесить	infuriate
+	mauscheln	играть на скрипке	fiddle
+	die Eidechse	ящерица	lizard
+	schwächeln	спотыкаться	falten
+	klappen	складывать	fold
+	verantwortungsbewusst	ответственный	responsible
+	auskennen	знать о	know about
+	betroffen	пострадавший	affected
+	der Specht 	дятел	woodpecker
+	ulkig	смешной	funny
+	die Höflichkeit	учтивость	courtesy
+	kratzen	царапать	scratch
+	nachvollziehen	постигать	comprehend
+	die Faser	волокно	fiber
+	die Besetzung	захват, оккупация	occupation
+	welken	увядать	wither
+	verpennen	просыпАть	sleep through
+	die Regung	слабое движение, ощущение	movement, stirring
+	die Empfindung	ощущение	sensation
+	verlassen	покинутый	forsaken
+	die Rivalität	соперничество	rivalry
+	furchtbar	ужасный	awfull
+	dämlich	глупый	stupid
+	aufführen	исполнять	perform
+	aufrechnen	засчитывать	charge to
+	abwimmeln	избавляться от	get rid of
+	schmutzig	грязный	dirty
+	grobkörnig	крупнозернистый	coarse-grained
+	impfen	вакцинировать	vaccinate
+	stolzieren	высокомерная походка	swagger
+	etablieren	устанавливать	establish
+	erstaunlicherweise	удивительно	amazingly
+	gediegen	добротный	tastefull
+	die Naht	шов	seam
+	der Ärmel	рукав	sleeve
+	umliegend	окрестный	surrounding
+	hochwertig	высококачественный	hight-quality
+	angeblich	якобы	allegedly
+	die Ferne	расстояние	distance
+	der Abstand	расстояние	distance
+	vorzuhalten	упрекать	reproach
+	das Grundstück	недвижимость	property
+	vorhanden	имеющийся в наличии	available
+	die Abkürzung	аббревиатура	abbreviation
+	die Drossel	дроссель	throttle
+	stanzen	штамповать, перфорировать	stamp
+	ablenken	отвлекать	distract
+	prägen	чеканить	emboss
+	lenken	управлять	steer
+	gereift	зрелый	ripe
+	ausgereift	вызревший	mellow
+	umfassen	включать в себя, охватывать	include, embrace
+	der Aufschwung	подъем (экономики, на турнике)	upswing
+	der Tüftler	ремесленник	tinkerer
+	knacken	потрескивать, щелкать	crack
+	jucken	чесать	itch
+	flackern	мерцать	flicker
+	zustimmen	солашаться	agree
+	das Gedächtnis	память	memory
+	nachlassen	снижать	subside
+	der Kern	ядро	kernel
+	umbenennen	переименовывать	rename
+	der Aufbau	конструкция, строительство	constraction
+	das Freibad	открытый бассейн	outdoor pool
+	kohärent	последовательный	coherent
+	lancieren	запускать	launch
+	der Degen	меч	sword
+	begleiten	сопровождать	accompany
+	das Übermaß	избыток	excess
+	pudern	пудрить	powder
+	die Perücke	парик	wig
+	der Vorhang	занавес	curtain
+	das Gewebe	ткань	tissue
+	geschmückt	украшенный	decorated
+	festlich	праздничный	festive
+	verkrampft	встревоженный	uptight
+	schludern	халтурить	skimp
+	ausrechnen	высчитывать	calculate
+	ersticken	задыхаться	choke
+	dröhnen	гудеть	roar
+	gelassen	спокойно	calmly
+	donnern	греметь	thunder
+	das Waschbrett	плинтус	washboard
+	zerrinnen	таять	melt away
+	das Pech	невезение	bad luck
+	überfällig	просроченный	overdue
+	herrschen	превалироватьб царить	rule
+	hintergehen	обманывать	deceive
+	aufwachen	просыпаться	wake up
+	aufweisen	демонстрировать	show
+	abstimmen	голосовать, настраивать, координировать	vote, attune, coordinate
+	das Verbot	запрет	ban
+	der Aufzug	лифт	elevator
+	die Versorgung	снабжение, обеспечение	supply, care
+	verzichten	отрекаться	renounce
+	das All	космос, вселенная	space, universe
+	folglich	следовательно	consequently
+	streben	прилагать усилия	strive
+	der Bezirk	район	district
+	der Zerfall	дезинтеграция	desintegration
+	eingehen	входить	enter
+	letztlich	в конечном счете	ultimately
+	die Aussprache	произношение	pronuciation
+	die Gegend	местность	area
+	das Märchen	сказка	fairy tale
+	einheitlich	единообразный	uniform
+	antreten	конкурировать	compete
+	das Getriebe	передача	gear
+	eingefleischt	укоренившийся	ingrained
+	die Verschmutzung	загрязнение	pollution
+	die Zusage	обязательство	commitment
+	beschönigen	приукрашивать	gloss over
+	verrohen	огрубевать	brutalize
+	beitreten	присоединяться	join
+	die Anzahl	количество	number
+	sonstig	другой	other
+	aufnehmen	снимать фото, видео	record
+	die Güte	доброта, качество	kindness, quality
+	das Siegel	печать	seal
+	der Urheber	автор	author
+	ausschließlich	исключительно	exclusively
+	prinzipiell	в принципе	in principle
+	die Masern	корь	measles
+	die Ausnahme	исключение	exception
+	der Antrag	запрос	request
+	der Zügel	подводья	rein
+	indem	в то время как	while
+	die Bewertung	оценка	assesment
+	widmen	посвещать, уделять	dedicate
+	rachsüchtig	мстительный	vindictive
+	vertraulich	конфиденциальный	confidential
 
 
     ]
