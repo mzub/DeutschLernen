@@ -1709,120 +1709,120 @@
         {"german":"widmen","russian":"посвещать, уделять","english":"dedicate"},
         {"german":"rachsüchtig","russian":"мстительный","english":"vindictive"},
         {"german":"vertraulich","russian":"конфиденциальный","english":"confidential"},
-        die Verfügung	распоряжение, удаление	disposal
-zunehmend	все больше и больше	increasingly
-der Umweg	объезд	dertour
-der Antrieb	привод	drive
-vermögen	быть в состоянии	to be able
-der Fluch	проклятие	curse
-der Segen	благословение	blessing
-verdammen	осуждать	condemn
-vereint	единый	united
-der Umlauf	циркуляция, обращение	circulation
-überheblich	высокомерный	arrogant
-überlegen	превосходящий	superior
-übermächtig	непреодолимый	overpowering
-überflüssig	излишний	superfluous
-übermenschen	сверхчеловеческий	superman
-überdrüssig	утомленный	weary
-stürmischen	штормовой	stormy
-das Eichhörnchen	белка	squirrel
-der Magen	желудок	stomach
-die Ursache	причина	cause
-die Ableitung	производная	derivative
-das Ableiten	вывод	derive
-vermuten	подозревать	suspect
-die Bewirtung	гостеприимство	hospitality
-die Sorge	беспокойство	worry
-erkämpften	завоевывать	won
-erwachen	будить	awakening
-der Genosse	товарищ	comrade
-verzagen	отчаиваться 	dispair
-morschen	гнилой	rotten
-versorgen	снабжать	supply
-das Zuchthaus	исправительная тюрьма	penitentiary
-darreichen	предъявлять	proffer
-die Kreide	мел	chalk
-der Frosch	лягушка	frog
-vorwegnehmen	предчувствовать	apprehend
-griesgrämig	ворчливый	grouchy
-begehen	совершать	commit
-beliebt	популярный	popular
-verschollen	отсутствующий	missing
-vormachen	дурачить	fool
-der Leuchter	подсвечник	chandelier
-reinlegen	вводить в заблуждение	trick
-geschickter	умный	clever
-aufhalten	останавливать	stop
-ungehindert	безпрепятственный	unimpeded
-eindämmen	содержать	contain
-lauschen	слушать	listen
-gegenseitig	взаимно	mutually
-der Vorrang	приоритет	priority
-das Kreuz	крест	cross
-der Ahn	предок	ancestor
-der Sockel	оносвание	base
-gespannt	любопытный, напряженный	coriuos, tense
-der Forscher	исследователь	researcher
-der Schrub	импульс, рывок	thrust
-erzeugen	производить	produce
-die Süßigkeiten	конфеты	sweets
-sengen	палить	singe
-die Redewendung	идиома	idiom
-das Beet	грядка	garden bed
-fleischfressend	плотоядный	carnivorous
-die Kippe	ненадежное положение	precarious situation
-verstimmen	расстраивать	displease
-der Stummel	остаток чего-то, окурок	stub
-der Zeichentrickfilm	мультфильм	cartoon
-die Pusteblume	одуванчик	dandelion
-das Wesen	суть, сущность	being
-strömen	интесивно течь	stream
-die Menge	количество	amount
-die Flüssigkeit	жидкость	fluid
-stattlich	внушительный	stately
-wütend	неистовый	raging
-entsetzt	в ужасе	horrified
-die Ausrede	оправдание	excuse
-die Erziehung	образование	education
-das Zelt	палатка	tent
-die Hornisse	шершень	hornet
-die Trauer	траур	mourning
-die Beute	добыча	prey
-anstößig	оскорбительный	offensive
-die Verwirrung	путаница	confusion
-teilweise	частично	partially
-der Biber	бобр	biver
-das Nagetier	грызун	rodent
-die Ebene	равнина	plane
-stiften	учреждать	establish
-der Grat	гребень, хребет	ridge
-die Hütte	хижина	hut
-der Aufstieg	подъем	rise
-das Erz	руда	ore
-auffallen	выделяться	stand out
-wirken	действовать	act
-der Unfug	шалость	mischief
-eifersüchtig	ревнивый	jelaous
-anfassen	трогать	touch
-der Erzieher	воспитатель	educator
-schlau	умный	smart
-erhältlich	доступный	available
-конвертировать	конвертировать	convert
-die Kantine	столовая	canteen
-die Amsel	дрозд черный	blackbird
-die Gemütlichkeit	уют	coziness
-die Behaglichkeit	комфорт	comfort
-entziehen	отзывать	revoke
-anpassen	регулировать	adjust
-der Auftrag	заказ, поручение	order, assignment
-eingreifen	вмешиваться	intervene
-die Absicht	намерение	intention
-der Frieden	мир	peace
-die Bestäubung	опыление	pollination
-anweisen	инструктировать	instruct
-einschüchtern	запугивать	intimidate
-anschließen	соединять	connect
+	{"german":"die Verfügung","russian":"распоряжение, удаление","english":"disposal"},
+	{"german":"zunehmend","russian":"все больше и больше","english":"increasingly"},
+	{"german":"der Umweg","russian":"объезд","english":"dertour"},
+	{"german":"der Antrieb","russian":"привод","english":"drive"},
+	{"german":"vermögen","russian":"быть в состоянии","english":"to be able"},
+	{"german":"der Fluch","russian":"проклятие","english":"curse"},
+	{"german":"der Segen","russian":"благословение","english":"blessing"},
+	{"german":"verdammen","russian":"осуждать","english":"condemn"},
+	{"german":"vereint","russian":"единый","english":"united"},
+	{"german":"der Umlauf","russian":"циркуляция, обращение","english":"circulation"},
+	{"german":"überheblich","russian":"высокомерный","english":"arrogant"},
+	{"german":"überlegen","russian":"превосходящий","english":"superior"},
+	{"german":"übermächtig","russian":"непреодолимый","english":"overpowering"},
+	{"german":"überflüssig","russian":"излишний","english":"superfluous"},
+	{"german":"übermenschen","russian":"сверхчеловеческий","english":"superman"},
+	{"german":"überdrüssig","russian":"утомленный","english":"weary"},
+	{"german":"stürmischen","russian":"штормовой","english":"stormy"},
+	{"german":"das Eichhörnchen","russian":"белка","english":"squirrel"},
+	{"german":"der Magen","russian":"желудок","english":"stomach"},
+	{"german":"die Ursache","russian":"причина","english":"cause"},
+	{"german":"die Ableitung","russian":"производная","english":"derivative"},
+	{"german":"das Ableiten","russian":"вывод","english":"derive"},
+	{"german":"vermuten","russian":"подозревать","english":"suspect"},
+	{"german":"die Bewirtung","russian":"гостеприимство","english":"hospitality"},
+	{"german":"die Sorge","russian":"беспокойство","english":"worry"},
+	{"german":"erkämpften","russian":"завоевывать","english":"won"},
+	{"german":"erwachen","russian":"будить","english":"awakening"},
+	{"german":"der Genosse","russian":"товарищ","english":"comrade"},
+	{"german":"verzagen","russian":"отчаиваться ","english":"dispair"},
+	{"german":"morschen","russian":"гнилой","english":"rotten"},
+	{"german":"versorgen","russian":"снабжать","english":"supply"},
+	{"german":"das Zuchthaus","russian":"исправительная тюрьма","english":"penitentiary"},
+	{"german":"darreichen","russian":"предъявлять","english":"proffer"},
+	{"german":"die Kreide","russian":"мел","english":"chalk"},
+	{"german":"der Frosch","russian":"лягушка","english":"frog"},
+	{"german":"vorwegnehmen","russian":"предчувствовать","english":"apprehend"},
+	{"german":"griesgrämig","russian":"ворчливый","english":"grouchy"},
+	{"german":"begehen","russian":"совершать","english":"commit"},
+	{"german":"beliebt","russian":"популярный","english":"popular"},
+	{"german":"verschollen","russian":"отсутствующий","english":"missing"},
+	{"german":"vormachen","russian":"дурачить","english":"fool"},
+	{"german":"der Leuchter","russian":"подсвечник","english":"chandelier"},
+	{"german":"reinlegen","russian":"вводить в заблуждение","english":"trick"},
+	{"german":"geschickter","russian":"умный","english":"clever"},
+	{"german":"aufhalten","russian":"останавливать","english":"stop"},
+	{"german":"ungehindert","russian":"безпрепятственный","english":"unimpeded"},
+	{"german":"eindämmen","russian":"содержать","english":"contain"},
+	{"german":"lauschen","russian":"слушать","english":"listen"},
+	{"german":"gegenseitig","russian":"взаимно","english":"mutually"},
+	{"german":"der Vorrang","russian":"приоритет","english":"priority"},
+	{"german":"das Kreuz","russian":"крест","english":"cross"},
+	{"german":"der Ahn","russian":"предок","english":"ancestor"},
+	{"german":"der Sockel","russian":"оносвание","english":"base"},
+	{"german":"gespannt","russian":"любопытный, напряженный","english":"coriuos, tense"},
+	{"german":"der Forscher","russian":"исследователь","english":"researcher"},
+	{"german":"der Schrub","russian":"импульс, рывок","english":"thrust"},
+	{"german":"erzeugen","russian":"производить","english":"produce"},
+	{"german":"die Süßigkeiten","russian":"конфеты","english":"sweets"},
+	{"german":"sengen","russian":"палить","english":"singe"},
+	{"german":"die Redewendung","russian":"идиома","english":"idiom"},
+	{"german":"das Beet","russian":"грядка","english":"garden bed"},
+	{"german":"fleischfressend","russian":"плотоядный","english":"carnivorous"},
+	{"german":"die Kippe","russian":"ненадежное положение","english":"precarious situation"},
+	{"german":"verstimmen","russian":"расстраивать","english":"displease"},
+	{"german":"der Stummel","russian":"остаток чего-то, окурок","english":"stub"},
+	{"german":"der Zeichentrickfilm","russian":"мультфильм","english":"cartoon"},
+	{"german":"die Pusteblume","russian":"одуванчик","english":"dandelion"},
+	{"german":"das Wesen","russian":"суть, сущность","english":"being"},
+	{"german":"strömen","russian":"интесивно течь","english":"stream"},
+	{"german":"die Menge","russian":"количество","english":"amount"},
+	{"german":"die Flüssigkeit","russian":"жидкость","english":"fluid"},
+	{"german":"stattlich","russian":"внушительный","english":"stately"},
+	{"german":"wütend","russian":"неистовый","english":"raging"},
+	{"german":"entsetzt","russian":"в ужасе","english":"horrified"},
+	{"german":"die Ausrede","russian":"оправдание","english":"excuse"},
+	{"german":"die Erziehung","russian":"образование","english":"education"},
+	{"german":"das Zelt","russian":"палатка","english":"tent"},
+	{"german":"die Hornisse","russian":"шершень","english":"hornet"},
+	{"german":"die Trauer","russian":"траур","english":"mourning"},
+	{"german":"die Beute","russian":"добыча","english":"prey"},
+	{"german":"anstößig","russian":"оскорбительный","english":"offensive"},
+	{"german":"die Verwirrung","russian":"путаница","english":"confusion"},
+	{"german":"teilweise","russian":"частично","english":"partially"},
+	{"german":"der Biber","russian":"бобр","english":"biver"},
+	{"german":"das Nagetier","russian":"грызун","english":"rodent"},
+	{"german":"die Ebene","russian":"равнина","english":"plane"},
+	{"german":"stiften","russian":"учреждать","english":"establish"},
+	{"german":"der Grat","russian":"гребень, хребет","english":"ridge"},
+	{"german":"die Hütte","russian":"хижина","english":"hut"},
+	{"german":"der Aufstieg","russian":"подъем","english":"rise"},
+	{"german":"das Erz","russian":"руда","english":"ore"},
+	{"german":"auffallen","russian":"выделяться","english":"stand out"},
+	{"german":"wirken","russian":"действовать","english":"act"},
+	{"german":"der Unfug","russian":"шалость","english":"mischief"},
+	{"german":"eifersüchtig","russian":"ревнивый","english":"jelaous"},
+	{"german":"anfassen","russian":"трогать","english":"touch"},
+	{"german":"der Erzieher","russian":"воспитатель","english":"educator"},
+	{"german":"schlau","russian":"умный","english":"smart"},
+	{"german":"erhältlich","russian":"доступный","english":"available"},
+	{"german":"umsetzen","russian":"конвертировать","english":"convert"},
+	{"german":"die Kantine","russian":"столовая","english":"canteen"},
+	{"german":"die Amsel","russian":"дрозд черный","english":"blackbird"},
+	{"german":"die Gemütlichkeit","russian":"уют","english":"coziness"},
+	{"german":"die Behaglichkeit","russian":"комфорт","english":"comfort"},
+	{"german":"entziehen","russian":"отзывать","english":"revoke"},
+	{"german":"anpassen","russian":"регулировать","english":"adjust"},
+	{"german":"der Auftrag","russian":"заказ, поручение","english":"order, assignment"},
+	{"german":"eingreifen","russian":"вмешиваться","english":"intervene"},
+	{"german":"die Absicht","russian":"намерение","english":"intention"},
+	{"german":"der Frieden","russian":"мир","english":"peace"},
+	{"german":"die Bestäubung","russian":"опыление","english":"pollination"},
+	{"german":"anweisen","russian":"инструктировать","english":"instruct"},
+	{"german":"einschüchtern","russian":"запугивать","english":"intimidate"},
+	{"german":"anschließen","russian":"соединять","english":"connect"}
 
 
     ]
